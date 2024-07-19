@@ -1,0 +1,149 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+   
+
+}
+
+
+body{
+    
+    border: 1px solid black;
+    display: flex;
+   
+
+
+}
+div#impressao{
+    
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+
+#impressao > h1{
+    font-size: 19px;
+    padding: 15px;
+    background-color: #ccc;
+
+
+}
+div#cabecalho{
+    
+    display: flex;
+    
+    justify-content: space-between; 
+    align-items: center;
+}
+div#container-imagem{
+    align-items: left;
+}
+#form-imagem {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+div#nome{
+    font-size: 60px;
+    width: 500px ;
+    height: 100px;
+    padding-left: 25px;
+    background-position: cover;
+
+}
+div#container-imagem{
+    
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+    background-position: cover;
+    
+
+}
+
+div#infoPessoais{
+    padding: auto;
+    
+    display: flex;
+    flex-direction: left;
+    
+}
+div#Endereço, div#contato{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+div#educacao{
+    padding-left: 30px;
+    padding-bottom: 20px;
+   
+    gap: 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+div#educacao>p{
+    padding: 5px;
+}
+div#experiencias{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+.experiencia>h3{
+    margin: 5px 5px 5px 0px;
+
+}
+.experiencia{
+    margin-bottom: 5px;
+    
+    
+}
+.experiencia>p{
+    padding: 7px;
+}
+
+div#habilidades{
+
+
+
+padding-left: 30px;
+padding-right: 30px;
+display: flex;
+flex-direction: column;
+}
+.editando {
+    background-color: lightyellow;
+    border: 1px solid #ccc;
+}
+/* Estilização básica para os elementos */
+.elemento {
+    position: relative;
+    
+  
+}
+
+/* Estilo do texto de hover */
+.elemento::after {
+    content: 'Clique para editar';
+    position: absolute;
+    bottom: -20px; /* Ajuste a posição conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0; /* Inicialmente oculto */
+    pointer-events: none; /* Para não interferir com cliques nos elementos */
+    transition: opacity 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Exibir o texto ao passar o mouse sobre o elemento */
+.elemento:hover::after {
+    opacity: 1; /* Exibe o texto ao passar o mouse */
+}

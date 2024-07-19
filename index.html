@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerador de Currículo</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Incluir o arquivo JavaScript -->
+        
+        <!-- Incluir as bibliotecas externas, por exemplo: -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.1.0/docx.min.js"></script>
+
+
+    
+        
+    </head>
+<body>
+    <main id="impressao">
+        <div id="cabecalho" >
+            <div id="nome"><p>João da silva santos</p></div>
+            <div id="container-imagem">
+        
+                <form id="form-imagem">
+                    <input type="file" id="input-imagem" accept="image/*">
+                    <button type="submit" onclick="addFoto()">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <h1>Informações Pessoais:</h1>
+        <div id="infoPessoais">
+        
+            <div id="Endereço">
+                <h3>Endereço:</h3>
+                <p>Rua: sua rua, seu numero</p>
+                <p>Bairro: Seu bairro</p>
+                <p>cidade-uf</p>
+            </div>
+            <div id="contato"   >
+                <h3>Contato:</h3>
+                <p>Telefone: (xx) xxxxx-xxxx </p>
+                <p>E-mail: seuemail@exemplo.com</p>
+            </div>
+        </div>
+        <h1>Formação Acadêmica:</h1>
+        <div id="educacao">
+        
+        <div>
+            <h3>Ensino Médio Completo</h3>
+            <p>Ensino Médio completo pela escola Tal no ano 1999</p>
+        </div>
+        
+        </div>
+        <button id="addEducacao" onclick="addFormacao()">adicionar outro </button>
+        
+        <h1>Experiências Proficionais: </h1>
+        <div id="experiencias">
+            <div class="experiencia">
+                <h3>Experiência 1 2000-2007</h3>
+                <p>Responsável por atendimento ao cliente na loja física ou online alinhando
+                    às expectativas buscadas com a disponibilidade da loja;</p>
+                <p>Responsável pela organização e disposição dos produtos nas prateleiras</p>
+                <p>Atendimento aos clientes nas redes sociais</p>
+            </div>
+        
+        
+        </div>
+        <button id="addExperiencia" onclick="addExperiencia()">Adicionar nova experiência</button>
+        <h1>Habilidades:</h1>
+        <div id="habilidades">
+        
+        <ul id="ListaHabilidades">
+            <li>
+                <p>Excelência em atendimento ao cliente;</p>
+            </li>
+            <li>
+                <p>Comunicação</p>
+            </li>
+            <li>
+                <p>Disposição para flexibilidade de horários</p>
+            </li>
+        </ul>
+        <button id="addHabilidade" onclick="addHabilidade()">Adicionar Habilidade</button>
+        </div>
+        <button id="gerarPDF" onclick="gerarPDF()">Gerar PDF</button>
+        <button id="gerarDOCX">Gerar docx</button>
+
+        <button id="limparStorage" onclick="limparStorage()">Limpar Storage</button>
+        <script src="geraPDF.js"></script>
+        <script src="adicionar.js"></script>
+        <script src="listners.js"></script>
+        <script src="editaTexto.js"></script>
+        <script src="addFoto.js"></script>
+        <script src="salvaTexto.js"></script>
+        </body>
+    </main>
+
+</html>
