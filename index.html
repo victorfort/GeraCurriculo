@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gerador de Currículo</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./modal/modalcss.css">
         <!-- Incluir o arquivo JavaScript -->
         
         <!-- Incluir as bibliotecas externas, por exemplo: -->
@@ -19,6 +20,17 @@
         
     </head>
 <body>
+    <span >
+        <div id="myModal" class="modal">
+            <!-- Conteúdo do Modal -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Deseja limpar os dados arquivados?</p>
+              <button id="yesBtn">Sim</button>
+              <button id="noBtn">Não</button>
+            </div>
+          </div>
+    </span>
     <main id="impressao">
         <div id="cabecalho" >
             <div id="nome"><p>João da silva santos</p></div>
@@ -86,16 +98,20 @@
         <button id="addHabilidade" onclick="addHabilidade()">Adicionar Habilidade</button>
         </div>
         <button id="gerarPDF" onclick="gerarPDF()">Gerar PDF</button>
-        <button id="gerarDOCX">Gerar docx</button>
+       
 
-        <button id="limparStorage" onclick="limparStorage()">Limpar Storage</button>
+      
+       
         <script src="geraPDF.js"></script>
         <script src="adicionar.js"></script>
         <script src="listners.js"></script>
         <script src="editaTexto.js"></script>
         <script src="addFoto.js"></script>
         <script src="salvaTexto.js"></script>
-        </body>
-    </main>
+        <script src="./modal/modaljs.js"></script>
+
+    </main>   
+    </body>
+    
 
 </html>

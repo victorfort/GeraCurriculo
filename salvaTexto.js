@@ -35,7 +35,3 @@ window.onload = function() {
         conteudoCarregado = true; // Marca que o conteúdo foi carregado
     }
 }
-function limparStorage(){
-    localStorage.setItem('conteudoSalvo', '');
-
-}

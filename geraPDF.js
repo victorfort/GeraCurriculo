@@ -51,6 +51,7 @@ function gerarPDF() {
         pdf.save('documento.pdf');
     });
     restaurarBotoes()
+    limparDados()
 }
 
 function ocultarBotoes() {
