@@ -34,4 +34,5 @@ window.onload = function() {
         carregaTexto(); // Chama a função para carregar o conteúdo ao carregar a página
         conteudoCarregado = true; // Marca que o conteúdo foi carregado
     }
+    
 }

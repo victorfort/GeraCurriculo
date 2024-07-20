@@ -48,7 +48,8 @@ div#nome{
     width: 500px ;
     height: 100px;
     padding-left: 25px;
-    background-position: cover;
+    word-wrap: break-word;
+    
 
 }
 div#container-imagem{
