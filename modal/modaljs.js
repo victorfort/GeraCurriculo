@@ -76,7 +76,7 @@ function manipulaDados(paragrafo, modal){
   const texto = document.getElementById('h1Texto') 
   const span = document.getElementsByClassName("close")[0];
 
-  texto.innerText = "Deletar ou Excluir?";
+  texto.innerText = "Editar ou Excluir?";
     
     yesBtn.style.display= 'none';
     noBtn.style.display= 'none';
