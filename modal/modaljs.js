@@ -31,6 +31,8 @@ function abreModal(tipo, paragrafo){
 }
 
 function limparDados(){ 
+  const texto = document.getElementById('h1Texto')
+  texto.innerText = 'Deseja limpar os dados armazenados?'
   // Obtém o elemento <span> que fecha o modal
   const span = document.getElementsByClassName("close")[0];
   const modal = document.getElementById("myModal");
@@ -71,7 +73,10 @@ function limparDados(){
 
 
 function manipulaDados(paragrafo, modal){
+  const texto = document.getElementById('h1Texto') 
   const span = document.getElementsByClassName("close")[0];
+
+  texto.innerText = "Deletar ou Excluir?";
     
     yesBtn.style.display= 'none';
     noBtn.style.display= 'none';
