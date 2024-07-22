@@ -37,6 +37,10 @@ div#cabecalho{
 }
 div#container-imagem{
     align-items: left;
+    height: 100px;
+    width: 50px ;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 #form-imagem {
     position: relative;
@@ -44,9 +48,12 @@ div#container-imagem{
     margin-top: 10px;
 }
 div#nome{
+    max-width: 600px;
+    
     font-size: 60px;
-    width: 500px ;
-    height: 100px;
+     flex: 1;
+    
+    
     padding-left: 25px;
     word-wrap: break-word;
     

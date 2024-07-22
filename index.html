@@ -20,30 +20,37 @@
         
     </head>
 <body>
-    <span >
+    
         <div id="myModal" class="modal">
             <!-- Conteúdo do Modal -->
             <div class="modal-content">
               <span class="close">&times;</span>
-              <p>Deseja limpar os dados arquivados?</p>
+              <h1>Deseja limpar os dados arquivados?</h1>
               <button id="yesBtn">Sim</button>
               <button id="noBtn">Não</button>
+              <button id="editBtn">Edtiar Texto</button>
+              <button id="dellBtn">Deletar Texto</button>
+
             </div>
           </div>
-    </span>
+    
     <main id="impressao">
         <div id="cabecalho" >
             <div id="nome"><p>João da silva santos</p></div>
-            <div id="container-imagem">
-        
-                <form id="form-imagem">
-                    <input type="file" id="input-imagem" accept="image/*">
-                    <button type="submit" onclick="addFoto()">Enviar</button>
-                </form>
+
+            <div id="img">
+                <button id="btnAumentarfonte" onclick="aumentarFonte()">fonte nome +</button>
+                        <button id="btnDiminuirFonte" onclick="diminuirFonte()">fonte nome -</button>
+                <div id="container-imagem">
+                    <form id="form-imagem">
+                        
+                        <input type="file" id="input-imagem" accept="image/*">
+                        <button type="submit" onclick="addFoto()">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <button id="btnAumentarfonte" onclick="aumentarFonte()">fonte +</button>
-        <button id="btnDiminuirFonte" onclick="diminuirFonte()">fonte -</button>
+        
         <h1>Informações Pessoais:</h1>
         <div id="infoPessoais">
         

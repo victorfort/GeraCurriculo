@@ -8,13 +8,13 @@ function adicionarEventListenerParaParagrafos() {
 
     titulos.forEach(titulo => {
         titulo.classList.add('elemento')
-        titulo.addEventListener('click', () => { editaTexto(titulo) });
+        titulo.addEventListener('click', () => { abreModal("dados",titulo) });
     });
 
     // Itera sobre cada <p> e adiciona o event listener desejado
     paragrafos.forEach(paragrafo => {
         paragrafo.classList.add('elemento')
-        paragrafo.addEventListener('click', () => { editaTexto(paragrafo) });
+        paragrafo.addEventListener('click', () => { abreModal("dados",paragrafo)});
     });
 }
 

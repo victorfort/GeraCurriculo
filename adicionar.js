@@ -6,12 +6,12 @@ function addFormacao() {
    const titulo = document.createElement('h3')
    
    titulo.innerText='nova formação'; 
-   titulo.addEventListener('click',()=> {editaTexto(titulo)} );
+   titulo.addEventListener('click',()=> {abreModal("dados",titulo)} );
    titulo.classList.add('elemento')
 
    const descricao = document.createElement('p')
    descricao.innerText="aqui a descricao da sua nova formação";
-   descricao.addEventListener('click', () => { editaTexto(descricao) });
+   descricao.addEventListener('click', () => { abreModal("dados",descricao) });
    descricao.classList.add('elemento');
 
 
@@ -33,7 +33,7 @@ function addExperiencia() {
     const titulo = document.createElement('h3')
    
    titulo.innerText='nova Experiência'; 
-   titulo.addEventListener('click',()=> {editaTexto(titulo)} );
+   titulo.addEventListener('click',()=> {abreModal("dados",titulo)} );
    titulo.classList.add('elemento')
 
    const descricao1 = document.createElement('p')
@@ -42,7 +42,7 @@ function addExperiencia() {
    for (let i = 1; i <= 3; i++) {
     const descricao = eval(`descricao${i}`); // Avalia a variável dinamicamente
     descricao.innerText = `Descreva qual a função que vc executava. #${i}`;
-    descricao.addEventListener('click', () => { editaTexto(descricao) });
+    descricao.addEventListener('click', () => { abreModal("dados",descricao) });
     descricao.classList.add('elemento');
     
 }
@@ -65,7 +65,7 @@ function addHabilidade() {
     const habilidade = document.createElement('li');
     habilidade.innerText= 'descreva a habilidade';
     lista.appendChild(habilidade);
-    habilidade.addEventListener('click', () => { editaTexto(habilidade) });
+    habilidade.addEventListener('click', () => { abreModal("dados",habilidade) });
     habilidade.classList.add('elemento');
     console.log('Habilidade adicionada');
     salvarTexto()
