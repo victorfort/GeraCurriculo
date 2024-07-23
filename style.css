@@ -1,15 +1,9 @@
 @charset "UTF-8";
-*{
-    padding: 0px;
-    margin: 0px;
-   
-
-}
 
 
 body{
     
-    border: 1px solid black;
+    
     display: flex;
    
 
@@ -19,6 +13,8 @@ div#impressao{
     
     box-sizing: border-box; 
     overflow: hidden;
+    
+    
 }
 
 #impressao > h1{
